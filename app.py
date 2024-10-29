@@ -23,31 +23,31 @@ st.title("🌈 Generative Background Replacement with Cloudinary")
 st.write("Upload an image and provide a prompt to transform the background using Cloudinary's generative AI.")
 
 # Styling
-st.markdown("""
-<style>
-    .stFileUploader {
-        padding: 20px;
-        border: 2px dashed #008CBA;
-        border-radius: 10px;
-        text-align: center;
-        background-color: #f9f9f9;
-    }
-    .stTextInput {
-        margin-top: 20px;
-    }
-    .stImage {
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-</style>
-""", unsafe_allow_html=True)
+st.markdown('''
+    <style>
+        .stFileUploader {
+            padding: 20px;
+            border: 2px dashed #008CBA;
+            border-radius: 10px;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+        .stTextInput {
+            margin-top: 20px;
+        }
+        .stImage {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+''', unsafe_allow_html=True)
 
 # Image Upload
 uploaded_file = st.file_uploader("📷 Upload an image", type=["jpg", "png", "jpeg"])
 
 # Prompt Input
 prompt = st.text_input(
-    "📝 Enter a background replacement prompt", 
+    "📝 Enter a background replacement prompt",
     value="Minimalist background with a soft pastel gradient and even lighting"
 )
 
