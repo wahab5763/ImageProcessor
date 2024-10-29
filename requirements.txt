@@ -2,3 +2,4 @@ streamlit
 cloudinary
 cloudinary.uploader
 cloudinary_url
+pyngrok
